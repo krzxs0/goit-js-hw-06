@@ -15,7 +15,7 @@ const images = [
 
 const galleryElement = document.querySelector('.gallery');
 
-const imagesHTML = images(image => `
+const imagesHTML = images.map(image => `
   <li>
     <img src="${image.url}" alt="${image.alt}">
   </li>
